@@ -5,6 +5,7 @@ const Container = styled.div`
   padding: 16px;
   display: flex;
   gap: 16px;
+  align-items: flex-start;
 `;
 
 const Workspace = ({ children }) => <Container>{children}</Container>;
