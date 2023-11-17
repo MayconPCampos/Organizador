@@ -1,19 +1,26 @@
 import { createGlobalStyle } from "styled-components";
 import backgroundImage from "../assets/bg.avif";
-import titleFontLight from "../fonts/DMSans_18pt-Light.ttf";
-import titleFontBold from "../fonts/DMSans_18pt-Bold.ttf";
+import fontLight from "../fonts/DMSans_18pt-Light.ttf";
+import fontMedium from "../fonts/DMSans_18pt-Medium.ttf";
+import fontBold from "../fonts/DMSans_18pt-Bold.ttf";
 
 const GlobalStyles = createGlobalStyle`
 
     @font-face {
         font-family: "DMSans";
-        src: url(${titleFontLight});
+        src: url(${fontLight});
         font-weight: 300;
     }
 
     @font-face {
         font-family: "DMSans";
-        src: url(${titleFontBold});
+        src: url(${fontMedium});
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: "DMSans";
+        src: url(${fontBold});
         font-weight: 700;
     }
 
