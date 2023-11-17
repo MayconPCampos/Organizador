@@ -17,6 +17,11 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 500;
     }
 
+    html{
+        font-family: "DMSans";
+        font-weight: 300;
+    }
+
     body{
         background: url(${backgroundImage}), rgba(0,0,0,0.2);
         background-blend-mode: overlay;
