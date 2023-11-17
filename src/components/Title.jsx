@@ -22,6 +22,7 @@ const Styles = styled.div`
   h3 {
     font-weight: 700;
     color: #333;
+    padding: 8px;
   }
 
   h4 {
