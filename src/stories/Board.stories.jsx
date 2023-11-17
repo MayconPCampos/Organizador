@@ -1,5 +1,6 @@
 import React from "react";
 import Board from "../components/Board";
+import Title from "../components/Title";
 
 export default {
   title: "Components/Board",
@@ -7,5 +8,11 @@ export default {
 };
 
 export const Main = {
-  render: () => <Board></Board>,
+  render: () => (
+    <Board>
+      <Title>
+        <h3>✈️ travel to Paris</h3>
+      </Title>
+    </Board>
+  ),
 };
