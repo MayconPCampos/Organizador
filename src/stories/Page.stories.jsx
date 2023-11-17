@@ -1,5 +1,5 @@
 import Workspace from "../components/Workspace";
-import Header from "../components/Header";
+import Title from "../components/Title";
 import Board from "../components/Board";
 
 export default {
@@ -9,7 +9,7 @@ export default {
 export const Main = {
   render: () => (
     <>
-      <Header></Header>
+      <Title></Title>
       <Workspace>
         <Board></Board>
       </Workspace>
