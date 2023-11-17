@@ -1,5 +1,10 @@
 import React from "react";
+import styled from "styled-components";
 
-const Workspace = ({ children }) => <div>{children}</div>;
+const Container = styled.div`
+  padding: 16px;
+`;
+
+const Workspace = ({ children }) => <Container>{children}</Container>;
 
 export default Workspace;
