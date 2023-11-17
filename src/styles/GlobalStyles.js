@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import backgroundImage from "../assets/bg.avif";
 import titleFontLight from "../fonts/DMSans_18pt-Light.ttf";
-import titleFontMedium from "../fonts/DMSans_18pt-Medium.ttf";
+import titleFontBold from "../fonts/DMSans_18pt-Bold.ttf";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -13,8 +13,8 @@ const GlobalStyles = createGlobalStyle`
 
     @font-face {
         font-family: "DMSans";
-        src: url(${titleFontMedium});
-        font-weight: 500;
+        src: url(${titleFontBold});
+        font-weight: 700;
     }
 
     html{

@@ -16,23 +16,24 @@ const Styles = styled.div`
   }
 
   h2 {
-    font-weight: 500;
+    font-weight: 700;
   }
 
   h3 {
-    font-weight: 500;
+    font-weight: 700;
+    color: #333;
   }
 
   h4 {
-    font-weight: 500;
+    font-weight: 700;
   }
 
   h5 {
-    font-weight: 500;
+    font-weight: 700;
   }
 
   h6 {
-    font-weight: 500;
+    font-weight: 700;
   }
 `;
 
