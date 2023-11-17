@@ -26,6 +26,7 @@ const Styles = styled.div`
 
   h4 {
     font-weight: 700;
+    color: #333;
   }
 
   h5 {
