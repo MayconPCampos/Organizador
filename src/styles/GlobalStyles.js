@@ -24,6 +24,10 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 700;
     }
 
+    *{
+        box-sizing: border-box;
+    }
+
     html{
         font-family: "DMSans";
         font-weight: 300;
