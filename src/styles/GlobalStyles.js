@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 import backgroundImage from "../assets/bg.avif";
-import fontLight from "../fonts/DMSans_18pt-Light.ttf";
-import fontMedium from "../fonts/DMSans_18pt-Medium.ttf";
-import fontBold from "../fonts/DMSans_18pt-Bold.ttf";
+import fontLight from "../fonts/main/DMSans_18pt-Light.ttf";
+import fontMedium from "../fonts/main/DMSans_18pt-Medium.ttf";
+import fontBold from "../fonts/main/DMSans_18pt-Bold.ttf";
 
 const GlobalStyles = createGlobalStyle`
 
