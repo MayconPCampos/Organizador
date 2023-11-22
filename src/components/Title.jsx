@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import propTypes from "prop-types";
 import mainTitleFont from "../fonts/McLaren-Regular.ttf";
 
 const Styles = styled.div`
@@ -40,5 +41,9 @@ const Styles = styled.div`
 `;
 
 const Title = ({ children }) => <Styles>{children}</Styles>;
+
+Title.propTypes = {
+  children: propTypes.node,
+};
 
 export default Title;

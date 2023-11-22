@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import propTypes from "prop-types";
 
 const Card = styled.div`
   background-color: ${(props) => props.background};
@@ -6,5 +7,9 @@ const Card = styled.div`
   margin: 0 2px;
   border-radius: 5px;
 `;
+
+Card.propTypes = {
+  background: propTypes.string,
+};
 
 export default Card;

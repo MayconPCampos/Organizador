@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import propTypes from "prop-types";
 
 const Container = styled.div`
   background-color: #fff;
@@ -12,5 +13,9 @@ const Container = styled.div`
 `;
 
 const Board = ({ children }) => <Container>{children}</Container>;
+
+Board.propTypes = {
+  children: propTypes.node,
+};
 
 export default Board;
