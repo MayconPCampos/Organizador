@@ -3,7 +3,12 @@ import Title from "../components/Title";
 import Header from "../components/Header";
 import Board from "../components/Board";
 import Card from "../components/Card";
+import CardIcon from "../components/CardIcon";
 import Button from "../components/Button";
+
+//svg images
+import commentaryIcon from "../assets/comments-solid.svg";
+import descriptionIcon from "../assets/file-lines-regular.svg";
 
 export default {
   title: "Layout/Page",
@@ -26,6 +31,10 @@ export const Main = {
             <Title>
               <h4>Visit Eifel Tower</h4>
             </Title>
+            <CardIcon>
+              <img src={descriptionIcon} alt="" />
+              <img src={commentaryIcon} alt="" />
+            </CardIcon>
           </Card>
           <Button text="+ Add new card" />
         </Board>
