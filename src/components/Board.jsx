@@ -6,6 +6,7 @@ const Container = styled.div`
   background-color: ${(props) => props.theme.colors.background.light};
   border-radius: 5px;
   width: 300px;
+  box-shadow: 1px 1px #888;
   padding: 8px;
   display: flex;
   flex-direction: column;

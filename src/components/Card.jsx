@@ -6,6 +6,7 @@ const Card = styled.div`
   padding: 16px;
   margin: 0 2px;
   border-radius: 5px;
+  box-shadow: 1px 1px #aaa;
   display: flex;
   flex-direction: column;
   max-width: 300px;
