@@ -10,7 +10,7 @@ const Styles = styled.div`
   }
 
   font-family: "DMSans";
-  color: #fff;
+  color: ${(props) => props.theme.colors.text.light};
 
   h1 {
     font-family: "McLaren";
@@ -22,13 +22,13 @@ const Styles = styled.div`
 
   h3 {
     font-weight: 700;
-    color: #333;
+    color: ${(props) => props.theme.colors.text.dark};
     padding: 8px;
   }
 
   h4 {
     font-weight: 700;
-    color: #333;
+    color: ${(props) => props.theme.colors.text.dark};
   }
 
   h5 {
