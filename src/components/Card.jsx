@@ -10,6 +10,12 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 300px;
+
+  img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    order: -1;
+  }
 `;
 
 Card.propTypes = {
