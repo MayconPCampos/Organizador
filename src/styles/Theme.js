@@ -5,7 +5,7 @@ const theme = {
       light: "#fff",
     },
     background: {
-      light: "#fff",
+      light: "#eee",
     },
     button: {
       main: "#bbb",
