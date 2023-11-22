@@ -11,6 +11,10 @@ const theme = {
       main: "#bbb",
     },
   },
+  font: {
+    main: "DMSans",
+    light: "Arial",
+  },
 };
 
 export default theme;
