@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     html{
-        font-family: "DMSans";
+        font-family: ${(props) => props.theme.font.main};
         font-weight: 300;
     }
 

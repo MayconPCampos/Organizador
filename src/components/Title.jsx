@@ -9,7 +9,7 @@ const Styles = styled.div`
     src: url(${mainTitleFont});
   }
 
-  font-family: "DMSans";
+  font-family: ${(props) => props.theme.font.main};
   color: ${(props) => props.theme.colors.text.light};
 
   h1 {
