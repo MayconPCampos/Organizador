@@ -1,18 +1,18 @@
-import Workspace from "../components/Workspace";
-import Title from "../components/Title";
-import Header from "../components/Header";
-import Board from "../components/Board";
-import Card from "../components/Card";
-import CardIcon from "../components/CardIcon";
-import Button from "../components/Button";
+import Workspace from "../organisms/Workspace";
+import Title from "../atoms/Title";
+import Header from "../molecules/Header";
+import Board from "../atoms/Board";
+import Card from "../molecules/Card";
+import CardIcon from "../atoms/CardIcon";
+import Button from "../atoms/Button";
 
 //svg images
-import commentaryIcon from "../assets/comments-solid.svg";
-import descriptionIcon from "../assets/file-lines-regular.svg";
-import cardImage from "../assets/img01.jpg";
+import commentaryIcon from "../../assets/comments-solid.svg";
+import descriptionIcon from "../../assets/file-lines-regular.svg";
+import cardImage from "../../assets/img01.jpg";
 
 export default {
-  title: "Layout/Page",
+  title: "Layout/Pages/Page",
 };
 
 export const Main = {

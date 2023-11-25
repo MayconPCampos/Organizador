@@ -1,9 +1,9 @@
 import React from "react";
-import Board from "../components/Board";
-import Title from "../components/Title";
+import Board from "./Board";
+import Title from "./Title";
 
 export default {
-  title: "Components/Board",
+  title: "Components/Atoms/Board",
   component: Board,
 };
 

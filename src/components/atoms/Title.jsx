@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import propTypes from "prop-types";
-import mainTitleFont from "../fonts/main/McLaren-Regular.ttf";
+import mainTitleFont from "../../fonts/main/McLaren-Regular.ttf";
 
 const Styles = styled.div`
   @font-face {

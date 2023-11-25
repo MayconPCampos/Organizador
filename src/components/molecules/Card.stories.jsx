@@ -1,14 +1,14 @@
 import React from "react";
-import Card from "../components/Card";
-import Title from "../components/Title";
-import CardIcon from "../components/CardIcon";
+import Card from "./Card";
+import Title from "../atoms/Title";
+import CardIcon from "../atoms/CardIcon";
 
-import commentaryIcon from "../assets/comments-solid.svg";
-import descriptionIcon from "../assets/file-lines-regular.svg";
-import cardImage from "../assets/img01.jpg";
+import commentaryIcon from "../../assets/comments-solid.svg";
+import descriptionIcon from "../../assets/file-lines-regular.svg";
+import cardImage from "../../assets/img01.jpg";
 
 export default {
-  title: "components/Card",
+  title: "components/Molecules/Card",
   component: Card,
 };
 

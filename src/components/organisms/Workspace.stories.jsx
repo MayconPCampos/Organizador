@@ -1,8 +1,8 @@
 import React from "react";
-import Workspace from "../components/Workspace";
+import Workspace from "./Workspace";
 
 export default {
-  title: "Components/Workspace",
+  title: "Components/Organisms/Workspace",
   component: Workspace,
 };
 
