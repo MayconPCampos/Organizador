@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Title from "../atoms/Title";
 
 export default {
   title: "Components/Molecules/Header",
@@ -7,5 +8,13 @@ export default {
 };
 
 export const Main = {
-  render: () => <Header></Header>,
+  render: () => (
+    <>
+      <Header>
+        <Title>
+          <h1>Kapple</h1>
+        </Title>
+      </Header>
+    </>
+  ),
 };
