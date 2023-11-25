@@ -1,9 +1,9 @@
 import React from "react";
 import Board from "./Board";
-import Title from "./Title";
+import Title from "../atoms/Title";
 
 export default {
-  title: "Components/Atoms/Board",
+  title: "Components/Molecules/Board",
   component: Board,
 };
 
