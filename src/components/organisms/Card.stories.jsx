@@ -8,7 +8,7 @@ import descriptionIcon from "../../assets/file-lines-regular.svg";
 import cardImage from "../../assets/img01.jpg";
 
 export default {
-  title: "components/Molecules/Card",
+  title: "components/Organisms/Card",
   component: Card,
 };
 
