@@ -2,7 +2,7 @@ import Workspace from "../organisms/Workspace";
 import Title from "../atoms/Title";
 import Header from "../molecules/Header";
 import Board from "../molecules/Board";
-import Card from "../molecules/Card";
+import Card from "../organisms/Card";
 import CardIcon from "../atoms/CardIcon";
 import Button from "../atoms/Button";
 
