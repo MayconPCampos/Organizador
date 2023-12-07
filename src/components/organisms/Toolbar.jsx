@@ -5,6 +5,8 @@ const Container = styled.div`
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 50px;
+  grid-column: 3 / -1;
+  grid-row: 2 / 3;
 `;
 
 const Toolbar = ({ children }) => {
