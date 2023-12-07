@@ -7,6 +7,8 @@ const Header = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 `;
 
 export default Header;
