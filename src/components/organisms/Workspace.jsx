@@ -6,6 +6,7 @@ const Container = styled.div`
   padding: 16px;
   display: flex;
   height: 825px;
+  min-width: 800px;
   gap: 16px;
   align-items: flex-start;
   grid-column: 3 / -1;
