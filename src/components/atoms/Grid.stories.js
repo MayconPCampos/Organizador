@@ -14,17 +14,17 @@ const Box = styled.div`
 
 export const Example = {
   render: () => (
-    <Grid columns={4}>
-      <Item columnStart={1} columnEnd={2} rowStart={1} rowEnd={2}>
+    <Grid col={4}>
+      <Item colStart={1} colEnd={2} rowStart={1} rowEnd={2}>
         <Box></Box>
       </Item>
-      <Item columnStart={2} columnEnd={3} rowStart={2} rowEnd={3}>
+      <Item colStart={2} colEnd={3} rowStart={2} rowEnd={3}>
         <Box></Box>
       </Item>
-      <Item columnStart={3} columnEnd={4} rowStart={3} rowEnd={4}>
+      <Item colStart={3} colEnd={4} rowStart={3} rowEnd={4}>
         <Box></Box>
       </Item>
-      <Item columnStart={4} columnEnd={5} rowStart={4} rowEnd={5}>
+      <Item colStart={4} colEnd={5} rowStart={4} rowEnd={5}>
         <Box></Box>
       </Item>
     </Grid>
