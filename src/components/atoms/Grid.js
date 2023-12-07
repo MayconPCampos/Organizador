@@ -4,7 +4,7 @@ import propTypes from "prop-types";
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(${(props) => props.col}, 1fr);
-  gap: 16px;
+  gap: 0px;
 `;
 
 Grid.defaultProps = {
