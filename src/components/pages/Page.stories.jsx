@@ -8,7 +8,6 @@ import Card from "../organisms/Card";
 import CardIcon from "../atoms/CardIcon";
 import Button from "../atoms/Button";
 import Grid from "../atoms/Grid";
-
 import NewCard from "../organisms/NewCard";
 
 //svg images
@@ -57,9 +56,13 @@ export const Main = {
                 <img src={commentaryIcon} alt="" />
               </CardIcon>
             </Card>
-            <Button text="+ Add new card" />
+            <Button>
+              <button>+ Add new card</button>
+            </Button>
           </Board>
-          <Button text="+ Add new Board"></Button>
+          <Button>
+            <button>+ Add new board</button>
+          </Button>
         </Workspace>
       </Grid>
     </>
