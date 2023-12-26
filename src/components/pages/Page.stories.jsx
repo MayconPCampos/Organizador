@@ -9,6 +9,8 @@ import CardIcon from "../atoms/CardIcon";
 import Button from "../atoms/Button";
 import Grid from "../atoms/Grid";
 
+import NewCard from "../organisms/NewCard";
+
 //svg images
 import commentaryIcon from "../../assets/comments-solid.svg";
 import descriptionIcon from "../../assets/file-lines-regular.svg";
@@ -30,6 +32,8 @@ export const Main = {
         <Toolbar />
         <SideBar />
         <Workspace>
+          <NewCard></NewCard>
+
           <Board>
             <Title>
               <h3>✈️ Travel to Paris</h3>
