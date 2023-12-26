@@ -6,5 +6,5 @@ export default {
 };
 
 export const Usage = {
-  render: () => <NewCard opacity={1}></NewCard>,
+  render: () => <NewCard></NewCard>,
 };
