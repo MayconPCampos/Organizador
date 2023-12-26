@@ -58,7 +58,7 @@ const App = () => {
 
                 {/* // renderiza os cards dentro dos boards */}
                 {board.cards.map((card) => (
-                  <Card key={card.key} background={card.background}>
+                  <Card draggable key={card.key} background={card.background}>
                     <Title>
                       <h4>{card.title}</h4>
                     </Title>
