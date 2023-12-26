@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Workspace from "../src/components/organisms/Workspace";
 import Toolbar from "../src/components/organisms/Toolbar";
 import Title from "../src/components/atoms/Title";
@@ -21,6 +21,12 @@ import descriptionIcon from "./assets/file-lines-regular.svg";
 import cardImage from "./assets/img01.jpg";
 
 const App = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleClick = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -34,7 +40,13 @@ const App = () => {
           <Toolbar />
           <SideBar />
           <Workspace>
-            <NewCard></NewCard>
+            {isVisible && (
+              <NewCard>
+                <Button>
+                  <button onClick={handleClick}>close</button>
+                </Button>
+              </NewCard>
+            )}
             <Board>
               <Title>
                 <h3>✈️ Travel to Paris</h3>
@@ -59,11 +71,11 @@ const App = () => {
                 </CardIcon>
               </Card>
               <Button>
-                <button>+ Add new card</button>
+                <button onClick={handleClick}>+ Add new card</button>
               </Button>
             </Board>
             <Button>
-              <button>+ Add new board</button>
+              <button onClick={handleClick}>+ Add new board</button>
             </Button>
           </Workspace>
         </Grid>
