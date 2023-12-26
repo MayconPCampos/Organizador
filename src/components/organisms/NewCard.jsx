@@ -10,19 +10,18 @@ const Styled = styled.div`
   margin: 2% 20%;
   border: 1px solid rgba(0, 0, 0, 0.5);
   position: absolute;
-  opacity: ${(props) => props.opacity};
 `;
 
-const NewCard = ({ opacity }) => {
-  return <Styled opacity={opacity} />;
+const NewCard = ({ children }) => {
+  return <Styled>{children}</Styled>;
 };
 
 NewCard.defaultProps = {
-  opacity: 0,
+  children: undefined,
 };
 
 NewCard.propTypes = {
-  opacity: propTypes.number,
+  children: propTypes.node,
 };
 
 export default NewCard;
