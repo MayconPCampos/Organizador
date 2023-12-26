@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import propTypes from "prop-types";
 
 const Styled = styled.div`
   width: 500px;
@@ -14,6 +15,14 @@ const Styled = styled.div`
 
 const NewCard = ({ opacity }) => {
   return <Styled opacity={opacity} />;
+};
+
+NewCard.defaultProps = {
+  opacity: 0,
+};
+
+NewCard.propTypes = {
+  opacity: propTypes.number,
 };
 
 export default NewCard;
