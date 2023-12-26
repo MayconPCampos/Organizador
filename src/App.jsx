@@ -18,7 +18,9 @@ import theme from "./styles/Theme";
 //svg images
 import commentaryIcon from "./assets/comments-solid.svg";
 import descriptionIcon from "./assets/file-lines-regular.svg";
-import cardImage from "./assets/img01.jpg";
+
+// boards && cards
+import boards from "./data/database";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,33 +49,31 @@ const App = () => {
                 </Button>
               </NewCard>
             )}
-            <Board>
-              <Title>
-                <h3>✈️ Travel to Paris</h3>
-              </Title>
-              <Card background={(props) => props.theme.colors.cards.blue}>
+
+            {boards.map((board) => (
+              <Board key={board.key}>
                 <Title>
-                  <h4>Visit Eifel Tower</h4>
+                  <h3>{board.title}</h3>
                 </Title>
-                <CardIcon>
-                  <img src={descriptionIcon} alt="" />
-                  <img src={commentaryIcon} alt="" />
-                </CardIcon>
-              </Card>
-              <Card background="#ff4c78">
-                <img src={cardImage} alt="" />
-                <Title>
-                  <h4>Card title</h4>
-                </Title>
-                <CardIcon>
-                  <img src={descriptionIcon} alt="" />
-                  <img src={commentaryIcon} alt="" />
-                </CardIcon>
-              </Card>
-              <Button>
-                <button onClick={handleClick}>+ Add new card</button>
-              </Button>
-            </Board>
+
+                {/* // renderiza os cards dentro dos boards */}
+                {board.cards.map((card) => (
+                  <Card key={card.key} background={card.background}>
+                    <Title>
+                      <h4>{card.title}</h4>
+                    </Title>
+                    <img src={card.image} alt="" />
+                    <CardIcon>
+                      <img src={descriptionIcon} alt="" />
+                      <img src={commentaryIcon} alt="" />
+                    </CardIcon>
+                  </Card>
+                ))}
+                <Button>
+                  <button onClick={handleClick}>+ Add new card</button>
+                </Button>
+              </Board>
+            ))}
             <Button>
               <button onClick={handleClick}>+ Add new board</button>
             </Button>
