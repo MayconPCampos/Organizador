@@ -7,5 +7,9 @@ export default {
 };
 
 export const Primary = {
-  render: () => <Button text="+ add new"></Button>,
+  render: () => (
+    <Button>
+      <button>teste</button>
+    </Button>
+  ),
 };
