@@ -10,6 +10,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 300px;
+  cursor: pointer;
 
   img {
     border-radius: 5px;
