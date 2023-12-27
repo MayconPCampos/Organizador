@@ -3,8 +3,8 @@ import styled from "styled-components";
 import propTypes from "prop-types";
 
 const Styled = styled.div`
-  width: 500px;
-  height: 500px;
+  width: 650px;
+  height: 550px;
   background-color: #fff;
   border-radius: 5px;
   margin: 2% 20%;
