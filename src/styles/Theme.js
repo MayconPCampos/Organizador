@@ -6,13 +6,14 @@ const theme = {
       pink: "#ff4c78",
       blue: "#87b8ea",
       green: "#a9e37c",
+      white: "#fff",
     },
     text: {
-      dark: "#333",
+      dark: "#324b65",
       light: "#fff",
     },
     background: {
-      light: "#eee",
+      light: "#f2f3f5",
     },
     button: {
       main: "#bbb",
