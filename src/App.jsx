@@ -27,8 +27,9 @@ import boards from "./data/database";
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const handleClick = () => {
+  const showCreationCard = () => {
     setIsVisible(!isVisible);
+    isVisible ? (theme.boards.opacity = 1) : (theme.boards.opacity = 0.5);
   };
 
   return (
@@ -47,7 +48,7 @@ const App = () => {
             {isVisible && (
               <CardCreation>
                 <Button>
-                  <button onClick={handleClick}>cancel</button>
+                  <button onClick={showCreationCard}>cancel</button>
                 </Button>
               </CardCreation>
             )}
@@ -74,14 +75,14 @@ const App = () => {
                   </Card>
                 ))}
                 <Button>
-                  <button onClick={handleClick}>+ Add new card</button>
+                  <button onClick={showCreationCard}>+ Add new card</button>
                 </Button>
               </Board>
             ))}
 
             {/* Botão para criar novo board */}
             <Button>
-              <button onClick={handleClick}>+ Add new board</button>
+              <button onClick={showCreationCard}>+ Add new board</button>
             </Button>
           </Workspace>
         </Grid>
