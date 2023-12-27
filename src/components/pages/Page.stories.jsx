@@ -9,6 +9,7 @@ import CardIcon from "../atoms/CardIcon";
 import Button from "../atoms/Button";
 import Grid from "../atoms/Grid";
 import NewCard from "../organisms/NewCard";
+import Marker from "../atoms/Marker";
 
 //svg images
 import commentaryIcon from "../../assets/comments-solid.svg";
@@ -37,7 +38,8 @@ export const Main = {
             <Title>
               <h3>✈️ Travel to Paris</h3>
             </Title>
-            <Card background={(props) => props.theme.colors.cards.blue}>
+            <Card background={(props) => props.theme.colors.cards.white}>
+              <Marker color={(props) => props.theme.colors.cards.blue} />
               <Title>
                 <h4>Visit Eifel Tower</h4>
               </Title>
@@ -46,7 +48,8 @@ export const Main = {
                 <img src={commentaryIcon} alt="" />
               </CardIcon>
             </Card>
-            <Card background="#ff4c78">
+            <Card background={(props) => props.theme.colors.cards.white}>
+              <Marker color={(props) => props.theme.colors.cards.pink} />
               <img src={cardImage} alt="" />
               <Title>
                 <h4>Card title</h4>
