@@ -8,7 +8,6 @@ import Card from "../organisms/Card";
 import CardIcon from "../atoms/CardIcon";
 import Button from "../atoms/Button";
 import Grid from "../atoms/Grid";
-import CardCreation from "../organisms/CardCreation";
 import Marker from "../atoms/Marker";
 
 //svg images
@@ -31,9 +30,15 @@ export const Main = {
           </Title>
         </Header>
         <Toolbar />
-        <SideBar />
+        <SideBar>
+          <p>Dashboards</p>
+          <ul>
+            <li>Organization</li>
+            <li>Project</li>
+            <li>Study</li>
+          </ul>
+        </SideBar>
         <Workspace>
-          {/* <CardCreation></CardCreation> */}
           <Board>
             <Title>
               <h3>✏️ Board title</h3>

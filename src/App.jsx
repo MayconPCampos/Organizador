@@ -43,7 +43,14 @@ const App = () => {
             </Title>
           </Header>
           <Toolbar />
-          <SideBar />
+          <SideBar>
+            <p>Dashboards</p>
+            <ul>
+              <li>Organization</li>
+              <li>Project</li>
+              <li>Study</li>
+            </ul>
+          </SideBar>
           <Workspace>
             {isVisible && (
               <CardCreation>
