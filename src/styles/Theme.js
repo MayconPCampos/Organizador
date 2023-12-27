@@ -9,7 +9,7 @@ const theme = {
       white: "#fff",
     },
     text: {
-      dark: "#324b65",
+      dark: "#1f3043",
       light: "#fff",
     },
     background: {
@@ -22,6 +22,9 @@ const theme = {
   font: {
     main: "DMSans",
     light: "Arial",
+  },
+  boards: {
+    opacity: 1,
   },
 };
 
