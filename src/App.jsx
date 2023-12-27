@@ -21,7 +21,7 @@ import commentaryIcon from "./assets/comments-solid.svg";
 import descriptionIcon from "./assets/file-lines-regular.svg";
 import maximizeIcon from "./assets/window-maximize-regular.svg";
 
-// boards && cards
+// boards && cards database
 import boards from "./data/database";
 
 const App = () => {
@@ -78,6 +78,8 @@ const App = () => {
                 </Button>
               </Board>
             ))}
+
+            {/* Botão para criar novo board */}
             <Button>
               <button onClick={handleClick}>+ Add new board</button>
             </Button>
