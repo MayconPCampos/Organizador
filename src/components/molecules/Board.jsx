@@ -14,6 +14,7 @@ const Container = styled.div`
   flex-direction: column;
   gap: 5px;
   overflow-y: scroll;
+  opacity: ${(props) => props.theme.boards.opacity};
 `;
 
 const Board = ({ children }) => <Container>{children}</Container>;
