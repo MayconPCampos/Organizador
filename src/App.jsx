@@ -47,7 +47,7 @@ const App = () => {
             {isVisible && (
               <CardCreation>
                 <Button>
-                  <button onClick={handleClick}>close</button>
+                  <button onClick={handleClick}>cancel</button>
                 </Button>
               </CardCreation>
             )}
