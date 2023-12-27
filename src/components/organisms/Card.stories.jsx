@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card";
 import Title from "../atoms/Title";
 import CardIcon from "../atoms/CardIcon";
+import Marker from "../atoms/Marker";
 
 import commentaryIcon from "../../assets/comments-solid.svg";
 import descriptionIcon from "../../assets/file-lines-regular.svg";
@@ -15,6 +16,7 @@ export default {
 export const Simple = {
   render: () => (
     <Card background={(props) => props.theme.colors.cards.green}>
+      <Marker color={"red"} />
       <Title>
         <h4>Card title</h4>
       </Title>
@@ -28,7 +30,8 @@ export const Simple = {
 
 export const WithImage = {
   render: () => (
-    <Card background={(props) => props.theme.colors.cards.pink}>
+    <Card background={(props) => props.theme.colors.cards.white}>
+      <Marker color={"red"} />
       <img src={cardImage} alt="" />
       <Title>
         <h4>Card title</h4>
