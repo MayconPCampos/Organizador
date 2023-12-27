@@ -32,8 +32,7 @@ export const Main = {
         <Toolbar />
         <SideBar />
         <Workspace>
-          <NewCard></NewCard>
-
+          {/* <NewCard></NewCard> */}
           <Board>
             <Title>
               <h3>✈️ Travel to Paris</h3>
