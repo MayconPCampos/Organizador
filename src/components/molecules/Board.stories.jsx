@@ -11,7 +11,7 @@ export const Main = {
   render: () => (
     <Board>
       <Title>
-        <h3>✈️ travel to Paris</h3>
+        <h3>✏️ board title</h3>
       </Title>
     </Board>
   ),
