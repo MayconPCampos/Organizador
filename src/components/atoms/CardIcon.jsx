@@ -3,11 +3,11 @@ import styled from "styled-components";
 const CardIcon = styled.div`
   display: flex;
   gap: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
 
   img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     cursor: pointer;
   }
 `;
