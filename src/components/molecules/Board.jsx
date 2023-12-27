@@ -9,6 +9,7 @@ const Container = styled.div`
   max-height: 800px;
   box-shadow: 1px 1px #888;
   padding: 8px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 5px;
