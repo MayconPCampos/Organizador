@@ -73,7 +73,7 @@ const App = () => {
                     <Title>
                       <h4>{card.title}</h4>
                     </Title>
-                    <img src={card.image} alt="" />
+                    <img draggable="false" src={card.image} alt="" />
                     <CardIcon>
                       <img src={descriptionIcon} alt="" />
                       <img src={commentaryIcon} alt="" />
