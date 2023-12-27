@@ -16,6 +16,7 @@ const Container = styled.div`
     color: #fff;
     font-size: 1.2rem;
     margin: 5px;
+    cursor: default;
   }
 
   ul {
