@@ -12,16 +12,16 @@ const Styled = styled.div`
   position: absolute;
 `;
 
-const NewCard = ({ children }) => {
+const CardCreation = ({ children }) => {
   return <Styled>{children}</Styled>;
 };
 
-NewCard.defaultProps = {
+CardCreation.defaultProps = {
   children: undefined,
 };
 
-NewCard.propTypes = {
+CardCreation.propTypes = {
   children: propTypes.node,
 };
 
-export default NewCard;
+export default CardCreation;

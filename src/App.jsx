@@ -9,7 +9,7 @@ import Card from "../src/components/organisms/Card";
 import CardIcon from "../src/components/atoms/CardIcon";
 import Button from "../src/components/atoms/Button";
 import Grid from "../src/components/atoms/Grid";
-import NewCard from "../src/components/organisms/NewCard";
+import CardCreation from "../src/components/organisms/CardCreation";
 import Marker from "./components/atoms/Marker";
 
 import GlobalStyles from "./styles/GlobalStyles";
@@ -21,7 +21,7 @@ import commentaryIcon from "./assets/comments-solid.svg";
 import descriptionIcon from "./assets/file-lines-regular.svg";
 import maximizeIcon from "./assets/window-maximize-regular.svg";
 
-// boards && cards database
+// boards && cards dCardCreation
 import boards from "./data/database";
 
 const App = () => {
@@ -45,11 +45,11 @@ const App = () => {
           <SideBar />
           <Workspace>
             {isVisible && (
-              <NewCard>
+              <CardCreation>
                 <Button>
                   <button onClick={handleClick}>close</button>
                 </Button>
-              </NewCard>
+              </CardCreation>
             )}
 
             {boards.map((board) => (
