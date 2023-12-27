@@ -10,6 +10,7 @@ import CardIcon from "../src/components/atoms/CardIcon";
 import Button from "../src/components/atoms/Button";
 import Grid from "../src/components/atoms/Grid";
 import NewCard from "../src/components/organisms/NewCard";
+import Marker from "./components/atoms/Marker";
 
 import GlobalStyles from "./styles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
@@ -18,6 +19,7 @@ import theme from "./styles/Theme";
 //svg images
 import commentaryIcon from "./assets/comments-solid.svg";
 import descriptionIcon from "./assets/file-lines-regular.svg";
+import maximizeIcon from "./assets/window-maximize-regular.svg";
 
 // boards && cards
 import boards from "./data/database";
@@ -58,7 +60,8 @@ const App = () => {
 
                 {/* // renderiza os cards dentro dos boards */}
                 {board.cards.map((card) => (
-                  <Card draggable key={card.key} background={card.background}>
+                  <Card draggable key={card.key} background="#fff">
+                    <Marker color={card.background} />
                     <Title>
                       <h4>{card.title}</h4>
                     </Title>
@@ -66,6 +69,7 @@ const App = () => {
                     <CardIcon>
                       <img src={descriptionIcon} alt="" />
                       <img src={commentaryIcon} alt="" />
+                      <img src={maximizeIcon} alt="" />
                     </CardIcon>
                   </Card>
                 ))}
