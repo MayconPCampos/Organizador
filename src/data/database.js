@@ -1,6 +1,6 @@
 const boards = [
   {
-    key: "a",
+    key: 1,
     title: "✒️Design & painting",
     cards: [
       {
@@ -18,7 +18,7 @@ const boards = [
     ],
   },
   {
-    key: "b",
+    key: 2,
     title: "📌Decoration",
     cards: [
       {
@@ -60,7 +60,7 @@ const boards = [
     ],
   },
   {
-    key: "c",
+    key: 3,
     title: "🍝Food & gastronomy",
     cards: [
       {
@@ -78,7 +78,7 @@ const boards = [
     ],
   },
   {
-    key: "d",
+    key: 4,
     title: "✈️Places to visit",
     cards: [
       {
