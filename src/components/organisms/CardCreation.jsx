@@ -11,7 +11,7 @@ const Styled = styled.div`
   height: 750px;
   background-color: #fff;
   border-radius: 5px;
-  margin: 2% 15%;
+  margin: 0% 15%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   position: absolute;
   display: flex;
@@ -82,7 +82,7 @@ const CardCreation = ({ children, boardId, showCreationCard }) => {
 
   const createCard = (event) => {
     boards[boardId - 1].cards.push(text);
-    alert("Card adicionado no board " + boards[boardId - 1].title);
+    // alert("Card adicionado no board " + boards[boardId - 1].title);
     event.preventDefault();
     showCreationCard(false);
   };
