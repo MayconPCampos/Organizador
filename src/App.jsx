@@ -95,7 +95,11 @@ const App = () => {
 
             {/* Botão para criar novo board */}
             <Button>
-              <button onClick={showCreationCard}>+ Add new board</button>
+              <button
+                onClick={() => alert("Funcionalidade a ser implementada")}
+              >
+                + Add new board
+              </button>
             </Button>
           </Workspace>
         </Grid>
