@@ -6,7 +6,7 @@ const Styled = styled.div`
   button {
     background: transparent;
     border: none;
-    color: #bbb;
+    color: #1f3043;
     cursor: pointer;
     text-align: start;
     font-size: 16px;
@@ -15,8 +15,28 @@ const Styled = styled.div`
   }
 `;
 
-const Button = ({ children }) => {
-  return <Styled>{children}</Styled>;
+const StyledSubmit = styled.div`
+  button {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: #777;
+    cursor: pointer;
+    text-align: start;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 16px 0 8px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-top: 50px;
+  }
+`;
+
+const Button = ({ children, submit }) => {
+  if (submit) {
+    return <StyledSubmit>{children}</StyledSubmit>;
+  } else {
+    return <Styled>{children}</Styled>;
+  }
 };
 
 Button.propTypes = {

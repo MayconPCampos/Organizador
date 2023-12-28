@@ -9,7 +9,15 @@ export default {
 export const Primary = {
   render: () => (
     <Button>
-      <button>teste</button>
+      <button>Primary</button>
+    </Button>
+  ),
+};
+
+export const Submit = {
+  render: () => (
+    <Button submit>
+      <button>Submit</button>
     </Button>
   ),
 };
