@@ -15,6 +15,7 @@ const Container = styled.div`
   p {
     color: #fff;
     font-size: 1.2rem;
+    font-weight: 700;
     margin: 5px;
     cursor: default;
   }
