@@ -25,11 +25,13 @@ import maximizeIcon from "./assets/window-maximize-regular.svg";
 import boards from "./data/database";
 
 const App = () => {
+  const [boardId, setBoardId] = useState("");
   const [isVisible, setIsVisible] = useState(false);
 
-  const showCreationCard = () => {
+  const showCreationCard = (boardKey) => {
     setIsVisible(!isVisible);
     isVisible ? (theme.boards.opacity = 1) : (theme.boards.opacity = 0.5);
+    setBoardId(boardKey);
   };
 
   return (
@@ -53,13 +55,15 @@ const App = () => {
           </SideBar>
           <Workspace>
             {isVisible && (
-              <CardCreation>
+              <CardCreation
+                boardId={boardId}
+                showCreationCard={showCreationCard}
+              >
                 <Button>
-                  <button onClick={showCreationCard}>cancel</button>
+                  <button onClick={showCreationCard}>Fechar</button>
                 </Button>
               </CardCreation>
             )}
-
             {boards.map((board) => (
               <Board key={board.key}>
                 <Title>
@@ -82,7 +86,9 @@ const App = () => {
                   </Card>
                 ))}
                 <Button>
-                  <button onClick={showCreationCard}>+ Add new card</button>
+                  <button onClick={() => showCreationCard(board.key)}>
+                    + Add new card
+                  </button>
                 </Button>
               </Board>
             ))}

@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import propTypes from "prop-types";
+import Button from "../atoms/Button";
+
+import boards from "../../data/database";
 
 const Styled = styled.div`
   color: ${(props) => props.theme.colors.text.dark};
   width: 650px;
-  height: 550px;
+  height: 750px;
   background-color: #fff;
   border-radius: 5px;
-  margin: 2% 20%;
+  margin: 2% 15%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   position: absolute;
   display: flex;
@@ -28,6 +31,7 @@ const Styled = styled.div`
     border-radius: 5px;
     padding: 2px;
     background-color: #fff;
+    cursor: pointer;
   }
 
   textarea {
@@ -38,7 +42,7 @@ const Styled = styled.div`
     border-radius: 3px;
   }
 
-  .description {
+  .title {
     width: 100%;
     height: 40px;
     resize: none;
@@ -50,39 +54,69 @@ const Styled = styled.div`
     right: 20px;
   }
 
-  .commentary {
+  .content {
     width: 100%;
     height: 80px;
     resize: none;
   }
 `;
 
-const CardCreation = ({ children }) => {
+const CardCreation = ({ children, boardId, showCreationCard }) => {
+  const [text, setText] = useState({
+    key: "a3",
+    title: "",
+    content: "",
+    background: "red",
+    image: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setText((prevValue) => {
+      return {
+        ...prevValue,
+        [name]: value,
+      };
+    });
+  };
+
+  const createCard = (event) => {
+    boards[boardId - 1].cards.push(text);
+    alert("Card adicionado no board " + boards[boardId - 1].title);
+    event.preventDefault();
+    showCreationCard(false);
+  };
+
   return (
     <Styled>
       <form action="">
         <label>Escolher cor do marcador</label>
-        <input type="color" />
-        <label>Descrição</label>
+        <input type="color" name="background" onChange={handleChange} />
+        <label>Título</label>
         <textarea
+          onChange={handleChange}
           autofocus
-          className="description"
-          name=""
+          className="title"
+          name="title"
           id=""
           cols="1"
           rows="1"
         ></textarea>
-        <label>Adicionar comentário</label>
+        <label>Conteúdo</label>
         <textarea
           autofocus
-          className="commentary"
-          name=""
+          onChange={handleChange}
+          className="content"
+          name="content"
           id=""
           cols="1"
           rows="1"
         ></textarea>
         <label htmlFor="">Carregar imagem</label>
-        <input type="file" />
+        <input type="file" onChange={handleChange} name="image" />
+        <Button submit>
+          <button onClick={createCard}>Adicionar</button>
+        </Button>
       </form>
       <div className="children">{children}</div>
     </Styled>
