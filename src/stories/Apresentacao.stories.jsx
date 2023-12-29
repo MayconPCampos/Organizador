@@ -19,7 +19,7 @@ export const Apresentacao = {
           <p>Este projeto está em início de desenvolvimento.</p>
           <p>
             Você pode acessar uma versão para testes publicada no seguinte{" "}
-            <a href="#" target="_blank">
+            <a href="https://kapple.vercel.app/" target="_blank">
               {" "}
               Link
             </a>
