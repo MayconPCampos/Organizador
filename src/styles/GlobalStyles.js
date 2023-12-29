@@ -37,9 +37,10 @@ const GlobalStyles = createGlobalStyle`
         background: url(${backgroundImage}), rgba(0,0,0,0.2);
         background-blend-mode: overlay;
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         width: 1920px;
-        height: 100vh;
+        height: 100%;
         margin: 0;
     }
 
