@@ -31,6 +31,7 @@ const GlobalStyles = createGlobalStyle`
     html{
         font-family: ${(props) => props.theme.font.main};
         font-weight: 300;
+        overflow-x: hidden;
     }
 
     body{
