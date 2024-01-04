@@ -31,13 +31,14 @@ const GlobalStyles = createGlobalStyle`
     html{
         font-family: ${(props) => props.theme.font.main};
         font-weight: 300;
-        overflow-x: hidden;
+       
     }
 
     body{
         background: url(${backgroundImage}), rgba(0,0,0,0.2);
         background-blend-mode: overlay;
         background-size: cover;
+        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         width: 1920px;

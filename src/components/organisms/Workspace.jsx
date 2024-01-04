@@ -11,7 +11,7 @@ const Container = styled.div`
   align-items: flex-start;
   grid-column: 3 / -1;
   grid-row: 4 / 5;
-  overflow-x: scroll;
+  overflow: scroll;
 `;
 
 const Workspace = ({ children }) => <Container>{children}</Container>;
