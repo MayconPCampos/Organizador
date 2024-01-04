@@ -11,7 +11,6 @@ const Container = styled.div`
   align-items: flex-start;
   grid-column: 3 / -1;
   grid-row: 4 / 5;
-  overflow: scroll;
 
   /* barra de rolagem */
 

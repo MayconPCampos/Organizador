@@ -44,6 +44,8 @@ const GlobalStyles = createGlobalStyle`
         width: 1920px;
         height: 100%;
         margin: 0;
+        overflow-x: scroll;
+        overflow-y: hidden;
     }
 
     h1, h2, h3, h4, h5, h6{
