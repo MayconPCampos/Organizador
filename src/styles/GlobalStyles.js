@@ -49,27 +49,7 @@ const GlobalStyles = createGlobalStyle`
     h1, h2, h3, h4, h5, h6{
         margin: 0;
     }
-
-    /* barra de rolagem */
-
-    /* width */
-    ::-webkit-scrollbar {
-        width: 14px;
-    }
-    
-    /* Track */
-    ::-webkit-scrollbar-track {
-        border: 4px solid rgba(0, 0, 0, 0);
-    }
-    
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        border: 4px solid rgba(0, 0, 0, 0);
-        background-clip: padding-box;
-        border-radius: 9999px;
-        background-color: rgba(200, 200, 200, .8);
-    }
-
+ 
 `;
 
 export default GlobalStyles;
