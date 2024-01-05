@@ -17,7 +17,7 @@ import maximizeIcon from "../../assets/window-maximize-regular.svg";
 import cardImage from "../../assets/img01.jpg";
 
 export default {
-  title: "Components/Pages/Page",
+  title: "Components/pages/Dashboard",
 };
 
 export const Main = {
